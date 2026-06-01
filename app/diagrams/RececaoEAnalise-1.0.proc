@@ -52,6 +52,19 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_KZ3bEV3eEfGbr_eB3ZGNzQ" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_KZ3bEF3eEfGbr_eB3ZGNzQ" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_KZ3bEl3eEfGbr_eB3ZGNzQ" name="" content="" returnTypeFixed="true"/>
+          <operations xmi:type="expression:Operation" xmi:id="_JRYBo13hEfGJifymCx1eYA">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_JRYBpF3hEfGJifymCx1eYA" name="pedido" content="pedido" type="TYPE_VARIABLE" returnType="com.company.model.Pedido">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_JRYBpV3hEfGJifymCx1eYA" name="pedido" dataType="_IerNVFLPEfGj_IdrBrDnWg" className="com.company.model.Pedido"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_JRYBpl3hEfGJifymCx1eYA" name="pedidoInput.intervencoes" content="if (!pedidoInput?.intervencoes) {&#xD;&#xA;&#x9;return null&#xD;&#xA;}&#xD;&#xA;def registoIntervencoesVar = pedido.intervencoes ?: new com.company.model.RegistoIntervencoes()&#xD;&#xA;registoIntervencoesVar.DataExecucao = pedidoInput?.intervencoes?.DataExecucao&#xD;&#xA;registoIntervencoesVar.descricao = pedidoInput?.intervencoes?.descricao&#xD;&#xA;registoIntervencoesVar.NumeroHoras = pedidoInput?.intervencoes?.NumeroHoras&#xD;&#xA;registoIntervencoesVar.Finalizado = pedidoInput?.intervencoes?.Finalizado&#xD;&#xA;return registoIntervencoesVar" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.RegistoIntervencoes">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_JRYBp13hEfGJifymCx1eYA" name="pedidoInput" type="COMPLEX" createMode="false"/>
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_JRYBqF3hEfGJifymCx1eYA" name="pedido" dataType="_IerNVFLPEfGj_IdrBrDnWg" className="com.company.model.Pedido"/>
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_JRYBqV3hEfGJifymCx1eYA" name="pedido" dataType="_IerNVFLPEfGj_IdrBrDnWg" className="com.company.model.Pedido"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_JRYBql3hEfGJifymCx1eYA" type="JAVA_METHOD" expression="setIntervencoes">
+              <inputTypes>com.company.model.RegistoIntervencoes</inputTypes>
+            </operator>
+          </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_KZ3bE13eEfGbr_eB3ZGNzQ" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_KZ3bFF3eEfGbr_eB3ZGNzQ" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_KZ3bFV3eEfGbr_eB3ZGNzQ" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
@@ -60,7 +73,25 @@
           <formMapping xmi:type="process:FormMapping" xmi:id="_M-WKCV3eEfGbr_eB3ZGNzQ">
             <targetForm xmi:type="expression:Expression" xmi:id="_M-WKCl3eEfGbr_eB3ZGNzQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
-          <contract xmi:type="process:Contract" xmi:id="_M-WKCF3eEfGbr_eB3ZGNzQ"/>
+          <contract xmi:type="process:Contract" xmi:id="_M-WKCF3eEfGbr_eB3ZGNzQ">
+            <inputs xmi:type="process:ContractInput" xmi:id="_JRXakF3hEfGJifymCx1eYA" name="pedidoInput" type="COMPLEX" dataReference="pedido" createMode="false">
+              <inputs xmi:type="process:ContractInput" xmi:id="_JRXakV3hEfGJifymCx1eYA" name="intervencoes" type="COMPLEX" createMode="false">
+                <inputs xmi:type="process:ContractInput" xmi:id="_JRXakl3hEfGJifymCx1eYA" name="DataExecucao" type="OFFSETDATETIME" createMode="false"/>
+                <inputs xmi:type="process:ContractInput" xmi:id="_JRXak13hEfGJifymCx1eYA" name="descricao" createMode="false"/>
+                <inputs xmi:type="process:ContractInput" xmi:id="_JRXalF3hEfGJifymCx1eYA" name="NumeroHoras" type="INTEGER" createMode="false"/>
+                <inputs xmi:type="process:ContractInput" xmi:id="_JRXalV3hEfGJifymCx1eYA" name="Finalizado" type="BOOLEAN" createMode="false"/>
+              </inputs>
+            </inputs>
+            <constraints xmi:type="process:ContractConstraint" xmi:id="_JRYBoF3hEfGJifymCx1eYA" expression="pedidoInput?.intervencoes?.DataExecucao != null" errorMessage="DataExecucao is mandatory for RegistoIntervencoes" name="mandatory_pedidoInput_intervencoes_DataExecucao">
+              <inputNames>pedidoInput</inputNames>
+            </constraints>
+            <constraints xmi:type="process:ContractConstraint" xmi:id="_JRYBoV3hEfGJifymCx1eYA" expression="pedidoInput?.intervencoes?.descricao != null" errorMessage="descricao is mandatory for RegistoIntervencoes" name="mandatory_pedidoInput_intervencoes_descricao">
+              <inputNames>pedidoInput</inputNames>
+            </constraints>
+            <constraints xmi:type="process:ContractConstraint" xmi:id="_JRYBol3hEfGJifymCx1eYA" expression="pedidoInput?.intervencoes?.NumeroHoras != null" errorMessage="NumeroHoras is mandatory for RegistoIntervencoes" name="mandatory_pedidoInput_intervencoes_NumeroHoras">
+              <inputNames>pedidoInput</inputNames>
+            </constraints>
+          </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_M-WKC13eEfGbr_eB3ZGNzQ" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:XORGateway" xmi:id="_RpBJYF3eEfGbr_eB3ZGNzQ" name="Gateway7" outgoing="_RpEMsF3eEfGbr_eB3ZGNzQ" incoming="_ZAI0UFLPEfGj_IdrBrDnWg _Qm6MIF3eEfGbr_eB3ZGNzQ _do1KUF3eEfGbr_eB3ZGNzQ">
@@ -607,7 +638,9 @@
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_W3KpQF3eEfGbr_eB3ZGNzQ" name="sim" target="_ZAGYEFLPEfGj_IdrBrDnWg" source="_W3G-4F3eEfGbr_eB3ZGNzQ">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_W3KpQV3eEfGbr_eB3ZGNzQ"/>
-        <condition xmi:type="expression:Expression" xmi:id="_W3KpQl3eEfGbr_eB3ZGNzQ" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+        <condition xmi:type="expression:Expression" xmi:id="_W3KpQl3eEfGbr_eB3ZGNzQ" name="newScript()" content="pedido.intervencoes.finalizado == true" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
+          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_BtmHIF3hEfGJifymCx1eYA" name="pedido" dataType="_IerNVFLPEfGj_IdrBrDnWg" className="com.company.model.Pedido"/>
+        </condition>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_do1KUF3eEfGbr_eB3ZGNzQ" name="nao" target="_RpBJYF3eEfGbr_eB3ZGNzQ" source="_W3G-4F3eEfGbr_eB3ZGNzQ" isDefault="true">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_do1KUV3eEfGbr_eB3ZGNzQ"/>
@@ -686,19 +719,19 @@
             </children>
             <children xmi:type="notation:Shape" xmi:id="_M-WxEF3eEfGbr_eB3ZGNzQ" type="3005" element="_M-Vi8F3eEfGbr_eB3ZGNzQ" fontName="Segoe UI" fillColor="14334392" lineColor="10710316">
               <children xmi:type="notation:DecorationNode" xmi:id="_M-WxEl3eEfGbr_eB3ZGNzQ" type="5005"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_M-WxEV3eEfGbr_eB3ZGNzQ" x="1272" y="99" width="100" height="50"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_M-WxEV3eEfGbr_eB3ZGNzQ" x="1272" y="66" width="100" height="50"/>
             </children>
             <children xmi:type="notation:Shape" xmi:id="_RpBwcF3eEfGbr_eB3ZGNzQ" type="3008" element="_RpBJYF3eEfGbr_eB3ZGNzQ" fontName="Segoe UI">
               <children xmi:type="notation:DecorationNode" xmi:id="_RpBwcl3eEfGbr_eB3ZGNzQ" type="5026">
                 <layoutConstraint xmi:type="notation:Location" xmi:id="_RpBwc13eEfGbr_eB3ZGNzQ" y="5"/>
               </children>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RpBwcV3eEfGbr_eB3ZGNzQ" x="1139" y="90"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RpBwcV3eEfGbr_eB3ZGNzQ" x="1139" y="79"/>
             </children>
             <children xmi:type="notation:Shape" xmi:id="_W3Hl8l3eEfGbr_eB3ZGNzQ" type="3008" element="_W3G-4F3eEfGbr_eB3ZGNzQ" fontName="Segoe UI">
               <children xmi:type="notation:DecorationNode" xmi:id="_W3Hl9F3eEfGbr_eB3ZGNzQ" type="5026">
                 <layoutConstraint xmi:type="notation:Location" xmi:id="_W3Hl9V3eEfGbr_eB3ZGNzQ" y="5"/>
               </children>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_W3Hl813eEfGbr_eB3ZGNzQ" x="1442" y="90"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_W3Hl813eEfGbr_eB3ZGNzQ" x="1442" y="79"/>
             </children>
           </children>
           <styles xmi:type="notation:DescriptionStyle" xmi:id="_Ier0PlLPEfGj_IdrBrDnWg"/>
@@ -994,7 +1027,7 @@
         <layoutConstraint xmi:type="notation:Location" xmi:id="_Qm6zNF3eEfGbr_eB3ZGNzQ" y="-10"/>
       </children>
       <styles xmi:type="notation:FontStyle" xmi:id="_Qm6zMV3eEfGbr_eB3ZGNzQ" fontName="Segoe UI"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Qm6zMl3eEfGbr_eB3ZGNzQ" points="[-22, -27, -90, 259]$[-22, -276, -90, 10]$[56, -276, -12, 10]"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Qm6zMl3eEfGbr_eB3ZGNzQ" points="[0, -6, -68, 312]$[68, -6, 0, 312]$[68, -296, 0, 22]"/>
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Qm8BUF3eEfGbr_eB3ZGNzQ" id="(1.0,0.627906976744186)"/>
     </edges>
     <edges xmi:type="notation:Connector" xmi:id="_RpEzwF3eEfGbr_eB3ZGNzQ" type="4001" element="_RpEMsF3eEfGbr_eB3ZGNzQ" source="_RpBwcF3eEfGbr_eB3ZGNzQ" target="_M-WxEF3eEfGbr_eB3ZGNzQ" roundedBendpointsRadius="10" routing="Rectilinear">
@@ -1016,7 +1049,7 @@
         <layoutConstraint xmi:type="notation:Location" xmi:id="_do4NpF3eEfGbr_eB3ZGNzQ" y="13"/>
       </children>
       <styles xmi:type="notation:FontStyle" xmi:id="_do4NoV3eEfGbr_eB3ZGNzQ" fontName="Segoe UI"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_do4Nol3eEfGbr_eB3ZGNzQ" points="[-23, -22, 302, -20]$[-23, -53, 302, -51]$[-325, -53, 0, -51]$[-325, -23, 0, -21]"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_do4Nol3eEfGbr_eB3ZGNzQ" points="[-23, -22, 302, -20]$[-23, -56, 302, -54]$[-325, -56, 0, -54]$[-325, -23, 0, -21]"/>
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_do5bwF3eEfGbr_eB3ZGNzQ" id="(1.0,0.5348837209302325)"/>
     </edges>
   </notation:Diagram>
