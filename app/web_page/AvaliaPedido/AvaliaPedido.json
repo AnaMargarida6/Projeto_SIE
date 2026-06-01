@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "c1e350ed-c623-4822-8e1c-7f6a2242a142",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1779730080296,
+  "lastUpdate" : 1780332343294,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -229,7 +229,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Tempo Esforco < 1d?"
+                          "value" : "Tempo Esforco <= 1d?"
                         },
                         "dimension" : {
                           "type" : "constant",
