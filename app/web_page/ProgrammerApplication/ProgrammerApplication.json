@@ -1,0 +1,32 @@
+{
+  "id" : "ProgrammerApplication",
+  "name" : "ProgrammerApplication",
+  "type" : "page",
+  "uuid" : "519c8898-0271-4193-980d-af80fda281ae",
+  "modelVersion" : "2.6",
+  "lastUpdate" : 1780944106472,
+  "description" : "Page generated with Bonita UI designer",
+  "rows" : [
+    [ ]
+  ],
+  "variables" : { },
+  "assets" : [
+    {
+      "id" : "59d18ed5-4e1b-4985-b731-868403676e5e",
+      "name" : "localization.json",
+      "type" : "json",
+      "order" : 0,
+      "external" : false
+    },
+    {
+      "id" : "5d073bc6-1846-414d-91f3-3b152cf0ef78",
+      "name" : "style.css",
+      "type" : "css",
+      "order" : 0,
+      "external" : false
+    }
+  ],
+  "inactiveAssets" : [ ],
+  "webResources" : [ ],
+  "hasValidationError" : false
+}
