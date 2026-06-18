@@ -48,7 +48,7 @@
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_MnpNoFLPEfGj_IdrBrDnWg" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_MnpNolLPEfGj_IdrBrDnWg" name="" content="" returnTypeFixed="true"/>
         </elements>
-        <elements xmi:type="process:Task" xmi:id="_M-Vi8F3eEfGbr_eB3ZGNzQ" name="Execucao do Pedido" outgoing="_KaRqwF3eEfGbr_eB3ZGNzQ" incoming="_RpEMsF3eEfGbr_eB3ZGNzQ" overrideActorsOfTheLane="false">
+        <elements xmi:type="process:Task" xmi:id="_M-Vi8F3eEfGbr_eB3ZGNzQ" name="Executar Pedido" outgoing="_KaRqwF3eEfGbr_eB3ZGNzQ" incoming="_RpEMsF3eEfGbr_eB3ZGNzQ" overrideActorsOfTheLane="false">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_KZ3bEV3eEfGbr_eB3ZGNzQ" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_KZ3bEF3eEfGbr_eB3ZGNzQ" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_KZ3bEl3eEfGbr_eB3ZGNzQ" name="" content="" returnTypeFixed="true"/>
@@ -111,7 +111,7 @@
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_8CcisVLeEfGX9c_kvNQ8rQ" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_8Ccis1LeEfGX9c_kvNQ8rQ" name="" content="" returnTypeFixed="true"/>
         </elements>
-        <elements xmi:type="process:XORGateway" xmi:id="_CIJ8sFLfEfGX9c_kvNQ8rQ" name="Tipo Pedido?" outgoing="_8CeX4FLeEfGX9c_kvNQ8rQ _8-QDoFLeEfGX9c_kvNQ8rQ" incoming="_5i1FoFLeEfGX9c_kvNQ8rQ">
+        <elements xmi:type="process:XORGateway" xmi:id="_CIJ8sFLfEfGX9c_kvNQ8rQ" name="Tipo de Pedido?" outgoing="_8CeX4FLeEfGX9c_kvNQ8rQ _8-QDoFLeEfGX9c_kvNQ8rQ" incoming="_5i1FoFLeEfGX9c_kvNQ8rQ">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_5itw4VLeEfGX9c_kvNQ8rQ" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_5itw4FLeEfGX9c_kvNQ8rQ" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_5itw4lLeEfGX9c_kvNQ8rQ" name="" content="" returnTypeFixed="true"/>
@@ -121,7 +121,7 @@
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_8-OOcVLeEfGX9c_kvNQ8rQ" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_8-O1gVLeEfGX9c_kvNQ8rQ" name="" content="" returnTypeFixed="true"/>
         </elements>
-        <elements xmi:type="process:ServiceTask" xmi:id="_Dt39UFLfEfGX9c_kvNQ8rQ" name="Informa cliente complexidade" outgoing="_MT7NIFLfEfGX9c_kvNQ8rQ" incoming="_Dt5ygFLfEfGX9c_kvNQ8rQ">
+        <elements xmi:type="process:ServiceTask" xmi:id="_Dt39UFLfEfGX9c_kvNQ8rQ" name="Informar cliente da complexidade" outgoing="_MT7NIFLfEfGX9c_kvNQ8rQ" incoming="_Dt5ygFLfEfGX9c_kvNQ8rQ">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_Dt39UlLfEfGX9c_kvNQ8rQ" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_Dt39UVLfEfGX9c_kvNQ8rQ" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_Dt39U1LfEfGX9c_kvNQ8rQ" name="" content="" returnTypeFixed="true"/>
@@ -200,7 +200,7 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_Dt39WFLfEfGX9c_kvNQ8rQ" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_Dt39V1LfEfGX9c_kvNQ8rQ" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
         </elements>
-        <elements xmi:type="process:ServiceTask" xmi:id="_JlYjQFLfEfGX9c_kvNQ8rQ" name="Informa equipa comercial" outgoing="_Oh6usFLfEfGX9c_kvNQ8rQ" incoming="_Jla_gFLfEfGX9c_kvNQ8rQ">
+        <elements xmi:type="process:ServiceTask" xmi:id="_JlYjQFLfEfGX9c_kvNQ8rQ" name="Informar equipa comercial" outgoing="_Oh6usFLfEfGX9c_kvNQ8rQ" incoming="_Jla_gFLfEfGX9c_kvNQ8rQ">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_JlZKUVLfEfGX9c_kvNQ8rQ" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_JlZKUFLfEfGX9c_kvNQ8rQ" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_JlZKUlLfEfGX9c_kvNQ8rQ" name="" content="" returnTypeFixed="true"/>
@@ -312,7 +312,7 @@
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_7k09IFLfEfGX9c_kvNQ8rQ" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_7k09IlLfEfGX9c_kvNQ8rQ" name="" content="" returnTypeFixed="true"/>
         </elements>
-        <elements xmi:type="process:Task" xmi:id="_Lo4poFhREfG4N6yuB2YJkg" name="Recebe resposta" outgoing="_yCwJ8FLfEfGX9c_kvNQ8rQ" incoming="_vtzr0VLfEfGX9c_kvNQ8rQ" actor="_cMEqcGNaEfGOiLHaCO_A-Q">
+        <elements xmi:type="process:Task" xmi:id="_Lo4poFhREfG4N6yuB2YJkg" name="Receber resposta" outgoing="_yCwJ8FLfEfGX9c_kvNQ8rQ" incoming="_vtzr0VLfEfGX9c_kvNQ8rQ" actor="_cMEqcGNaEfGOiLHaCO_A-Q">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_vtzEwVLfEfGX9c_kvNQ8rQ" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_vtzEwFLfEfGX9c_kvNQ8rQ" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_vtzEwlLfEfGX9c_kvNQ8rQ" name="" content="" returnTypeFixed="true"/>
@@ -364,7 +364,7 @@
           </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_Lo53x1hREfG4N6yuB2YJkg" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
-        <elements xmi:type="process:Task" xmi:id="_H8Xg8Fz5EfGkWoRPGOqEOA" name="Valida estimativa de pedido" outgoing="_5i1FoFLeEfGX9c_kvNQ8rQ" incoming="_Xzh3QFLPEfGj_IdrBrDnWg" overrideActorsOfTheLane="false">
+        <elements xmi:type="process:Task" xmi:id="_H8Xg8Fz5EfGkWoRPGOqEOA" name="Validar estimativa de pedido" outgoing="_5i1FoFLeEfGX9c_kvNQ8rQ" incoming="_Xzh3QFLPEfGj_IdrBrDnWg" overrideActorsOfTheLane="false">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_XzgCEVLPEfGj_IdrBrDnWg" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_XzgCEFLPEfGj_IdrBrDnWg" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_XzgCElLPEfGj_IdrBrDnWg" name="" content="" returnTypeFixed="true"/>
@@ -406,7 +406,7 @@
           </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_H8h5AFz5EfGkWoRPGOqEOA" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
-        <elements xmi:type="process:ServiceTask" xmi:id="_LKTh4F3QEfGhmccPz5GCgw" name="Aprovação de alterações funcionais" outgoing="_vtzr0VLfEfGX9c_kvNQ8rQ" incoming="_sLs3AVLfEfGX9c_kvNQ8rQ">
+        <elements xmi:type="process:ServiceTask" xmi:id="_LKTh4F3QEfGhmccPz5GCgw" name="Aprovar alterações funcionais" outgoing="_vtzr0VLfEfGX9c_kvNQ8rQ" incoming="_sLs3AVLfEfGX9c_kvNQ8rQ">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_sLsP8VLfEfGX9c_kvNQ8rQ" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_sLsP8FLfEfGX9c_kvNQ8rQ" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_sLsP8lLfEfGX9c_kvNQ8rQ" name="" content="" returnTypeFixed="true"/>
