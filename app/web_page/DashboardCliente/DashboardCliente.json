@@ -4,7 +4,7 @@
   "type" : "page",
   "uuid" : "fad766b3-fd33-4850-94e7-588b3995e3c8",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1781714335149,
+  "lastUpdate" : 1781792784588,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -204,11 +204,9 @@
                               "type" : "constant",
                               "value" : [
                                 "Descricao",
-                                "",
                                 "Concordancia",
                                 "Novo Acordo",
                                 "Alteracao",
-                                "",
                                 "Email"
                               ]
                             },
@@ -243,11 +241,9 @@
                               "type" : "constant",
                               "value" : [
                                 "descricao",
-                                "",
                                 "concordancia",
                                 "novoAcordo",
                                 "alteracao",
-                                "",
                                 "email"
                               ]
                             },
