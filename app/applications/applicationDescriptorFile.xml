@@ -1,13 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <applications xmlns="http://documentation.bonitasoft.com/application-xml-schema/1.1">
-    <application homePage="dashboard" layout="custompage_layoutBonita" theme="custompage_themeBonita" token="pedidos" version="1.0" profile="User" state="ACTIVATED">
-        <displayName>Pedidos</displayName>
+    <application homePage="cliente" layout="custompage_layoutBonita" theme="custompage_themeBonita" token="pedidos" version="1.0" profile="User" state="ACTIVATED">
+        <displayName>DashboardCliente</displayName>
         <applicationPages>
-            <applicationPage customPage="custompage_AnaliseERececao" token="dashboard"/>
+            <applicationPage customPage="custompage_DashboardCliente" token="cliente"/>
         </applicationPages>
         <applicationMenus>
-            <applicationMenu applicationPage="dashboard">
-                <displayName>My Dashboard</displayName>
+            <applicationMenu applicationPage="cliente">
+                <displayName>DashboardCliente</displayName>
+            </applicationMenu>
+        </applicationMenus>
+    </application>
+    <application homePage="gestor" layout="custompage_layoutBonita" theme="custompage_themeBonita" token="PedidosGestor" version="1.0" profile="Administrator" state="ACTIVATED">
+        <displayName>DashboardEmpresa</displayName>
+        <applicationPages>
+            <applicationPage customPage="custompage_DashboardGestor" token="gestor"/>
+        </applicationPages>
+        <applicationMenus>
+            <applicationMenu applicationPage="gestor">
+                <displayName>DashboardGestor</displayName>
             </applicationMenu>
         </applicationMenus>
     </application>
