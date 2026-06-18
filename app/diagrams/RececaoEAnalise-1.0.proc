@@ -52,16 +52,16 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_KZ3bEV3eEfGbr_eB3ZGNzQ" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_KZ3bEF3eEfGbr_eB3ZGNzQ" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_KZ3bEl3eEfGbr_eB3ZGNzQ" name="" content="" returnTypeFixed="true"/>
-          <operations xmi:type="expression:Operation" xmi:id="_JRYBo13hEfGJifymCx1eYA">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_JRYBpF3hEfGJifymCx1eYA" name="pedido" content="pedido" type="TYPE_VARIABLE" returnType="com.company.model.Pedido">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_JRYBpV3hEfGJifymCx1eYA" name="pedido" dataType="_IerNVFLPEfGj_IdrBrDnWg" className="com.company.model.Pedido"/>
+          <operations xmi:type="expression:Operation" xmi:id="_oOgRk2tdEfGzOtPXn2r7xA">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_oOgRlGtdEfGzOtPXn2r7xA" name="pedido" content="pedido" type="TYPE_VARIABLE" returnType="com.company.model.Pedido">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_oOgRlWtdEfGzOtPXn2r7xA" name="pedido" dataType="_IerNVFLPEfGj_IdrBrDnWg" className="com.company.model.Pedido"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_JRYBpl3hEfGJifymCx1eYA" name="pedidoInput.intervencoes" content="if (!pedidoInput?.intervencoes) {&#xD;&#xA;&#x9;return null&#xD;&#xA;}&#xD;&#xA;def registoIntervencoesVar = pedido.intervencoes ?: new com.company.model.RegistoIntervencoes()&#xD;&#xA;registoIntervencoesVar.DataExecucao = pedidoInput?.intervencoes?.DataExecucao&#xD;&#xA;registoIntervencoesVar.descricao = pedidoInput?.intervencoes?.descricao&#xD;&#xA;registoIntervencoesVar.NumeroHoras = pedidoInput?.intervencoes?.NumeroHoras&#xD;&#xA;registoIntervencoesVar.Finalizado = pedidoInput?.intervencoes?.Finalizado&#xD;&#xA;return registoIntervencoesVar" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.RegistoIntervencoes">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_JRYBp13hEfGJifymCx1eYA" name="pedidoInput" type="COMPLEX" createMode="false"/>
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_JRYBqF3hEfGJifymCx1eYA" name="pedido" dataType="_IerNVFLPEfGj_IdrBrDnWg" className="com.company.model.Pedido"/>
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_JRYBqV3hEfGJifymCx1eYA" name="pedido" dataType="_IerNVFLPEfGj_IdrBrDnWg" className="com.company.model.Pedido"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_oOgRlmtdEfGzOtPXn2r7xA" name="pedidoInput.intervencoes" content="if (!pedidoInput?.intervencoes) {&#xD;&#xA;&#x9;return null&#xD;&#xA;}&#xD;&#xA;def registoIntervencoesVar = pedido.intervencoes ?: new com.company.model.RegistoIntervencoes()&#xD;&#xA;registoIntervencoesVar.dataExecucao = pedidoInput?.intervencoes?.dataExecucao&#xD;&#xA;registoIntervencoesVar.descricao = pedidoInput?.intervencoes?.descricao&#xD;&#xA;registoIntervencoesVar.numeroHoras = pedidoInput?.intervencoes?.numeroHoras&#xD;&#xA;registoIntervencoesVar.finalizado = pedidoInput?.intervencoes?.finalizado&#xD;&#xA;return registoIntervencoesVar" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.RegistoIntervencoes">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_oOgRl2tdEfGzOtPXn2r7xA" name="pedidoInput" type="COMPLEX" createMode="false"/>
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_oOgRmGtdEfGzOtPXn2r7xA" name="pedido" dataType="_IerNVFLPEfGj_IdrBrDnWg" className="com.company.model.Pedido"/>
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_oOgRmWtdEfGzOtPXn2r7xA" name="pedido" dataType="_IerNVFLPEfGj_IdrBrDnWg" className="com.company.model.Pedido"/>
             </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_JRYBql3hEfGJifymCx1eYA" type="JAVA_METHOD" expression="setIntervencoes">
+            <operator xmi:type="expression:Operator" xmi:id="_oOgRmmtdEfGzOtPXn2r7xA" type="JAVA_METHOD" expression="setIntervencoes">
               <inputTypes>com.company.model.RegistoIntervencoes</inputTypes>
             </operator>
           </operations>
@@ -71,24 +71,24 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_KZ3bF13eEfGbr_eB3ZGNzQ" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_KZ3bFl3eEfGbr_eB3ZGNzQ" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_M-WKCV3eEfGbr_eB3ZGNzQ">
-            <targetForm xmi:type="expression:Expression" xmi:id="_97lrUGNVEfGOiLHaCO_A-Q" name="ExecucaoForm" content="02aa3abc-f0f0-4960-88d7-be185e2e98db" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_97lrUGNVEfGOiLHaCO_A-Q" name="ExecutionForm" content="2b8df912-8e13-450e-a030-1912f25b8acb" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_M-WKCF3eEfGbr_eB3ZGNzQ">
-            <inputs xmi:type="process:ContractInput" xmi:id="_JRXakF3hEfGJifymCx1eYA" name="pedidoInput" type="COMPLEX" dataReference="pedido" createMode="false">
-              <inputs xmi:type="process:ContractInput" xmi:id="_JRXakV3hEfGJifymCx1eYA" name="intervencoes" type="COMPLEX" createMode="false">
-                <inputs xmi:type="process:ContractInput" xmi:id="_JRXakl3hEfGJifymCx1eYA" name="DataExecucao" type="OFFSETDATETIME" createMode="false"/>
-                <inputs xmi:type="process:ContractInput" xmi:id="_JRXak13hEfGJifymCx1eYA" name="descricao" createMode="false"/>
-                <inputs xmi:type="process:ContractInput" xmi:id="_JRXalF3hEfGJifymCx1eYA" name="NumeroHoras" type="INTEGER" createMode="false"/>
-                <inputs xmi:type="process:ContractInput" xmi:id="_JRXalV3hEfGJifymCx1eYA" name="Finalizado" type="BOOLEAN" createMode="false"/>
+            <inputs xmi:type="process:ContractInput" xmi:id="_oOfqgGtdEfGzOtPXn2r7xA" name="pedidoInput" type="COMPLEX" dataReference="pedido" createMode="false">
+              <inputs xmi:type="process:ContractInput" xmi:id="_oOfqgWtdEfGzOtPXn2r7xA" name="intervencoes" type="COMPLEX" createMode="false">
+                <inputs xmi:type="process:ContractInput" xmi:id="_oOfqgmtdEfGzOtPXn2r7xA" name="dataExecucao" type="OFFSETDATETIME" createMode="false"/>
+                <inputs xmi:type="process:ContractInput" xmi:id="_oOfqg2tdEfGzOtPXn2r7xA" name="descricao" createMode="false"/>
+                <inputs xmi:type="process:ContractInput" xmi:id="_oOfqhGtdEfGzOtPXn2r7xA" name="numeroHoras" type="INTEGER" createMode="false"/>
+                <inputs xmi:type="process:ContractInput" xmi:id="_oOfqhWtdEfGzOtPXn2r7xA" name="finalizado" type="BOOLEAN" createMode="false"/>
               </inputs>
             </inputs>
-            <constraints xmi:type="process:ContractConstraint" xmi:id="_JRYBoF3hEfGJifymCx1eYA" expression="pedidoInput?.intervencoes?.DataExecucao != null" errorMessage="DataExecucao is mandatory for RegistoIntervencoes" name="mandatory_pedidoInput_intervencoes_DataExecucao">
+            <constraints xmi:type="process:ContractConstraint" xmi:id="_oOgRkGtdEfGzOtPXn2r7xA" expression="pedidoInput?.intervencoes?.dataExecucao != null" errorMessage="dataExecucao is mandatory for RegistoIntervencoes" name="mandatory_pedidoInput_intervencoes_dataExecucao">
               <inputNames>pedidoInput</inputNames>
             </constraints>
-            <constraints xmi:type="process:ContractConstraint" xmi:id="_JRYBoV3hEfGJifymCx1eYA" expression="pedidoInput?.intervencoes?.descricao != null" errorMessage="descricao is mandatory for RegistoIntervencoes" name="mandatory_pedidoInput_intervencoes_descricao">
+            <constraints xmi:type="process:ContractConstraint" xmi:id="_oOgRkWtdEfGzOtPXn2r7xA" expression="pedidoInput?.intervencoes?.descricao != null" errorMessage="descricao is mandatory for RegistoIntervencoes" name="mandatory_pedidoInput_intervencoes_descricao">
               <inputNames>pedidoInput</inputNames>
             </constraints>
-            <constraints xmi:type="process:ContractConstraint" xmi:id="_JRYBol3hEfGJifymCx1eYA" expression="pedidoInput?.intervencoes?.NumeroHoras != null" errorMessage="NumeroHoras is mandatory for RegistoIntervencoes" name="mandatory_pedidoInput_intervencoes_NumeroHoras">
+            <constraints xmi:type="process:ContractConstraint" xmi:id="_oOgRkmtdEfGzOtPXn2r7xA" expression="pedidoInput?.intervencoes?.numeroHoras != null" errorMessage="numeroHoras is mandatory for RegistoIntervencoes" name="mandatory_pedidoInput_intervencoes_numeroHoras">
               <inputNames>pedidoInput</inputNames>
             </constraints>
           </contract>

@@ -4,7 +4,7 @@
   "type" : "page",
   "uuid" : "0fa5cb91-c6aa-470b-8ab3-ee93e9f427ee",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1781710668055,
+  "lastUpdate" : 1781823339194,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -236,7 +236,7 @@
                           "rows" : [
                             [
                               {
-                                "type" : "component",
+                                "type" : "container",
                                 "dimension" : {
                                   "md" : 12,
                                   "sm" : 12,
@@ -244,18 +244,8 @@
                                   "lg" : 12
                                 },
                                 "propertyValues" : {
-                                  "headers" : {
-                                    "type" : "constant",
-                                    "value" : [
-                                      "Data Execucao",
-                                      "Descricao",
-                                      "Numero Horas",
-                                      "Finalizado"
-                                    ]
-                                  },
-                                  "allowHtml" : {
-                                    "type" : "constant",
-                                    "value" : true
+                                  "repeatedCollection" : {
+                                    "type" : "variable"
                                   },
                                   "hidden" : {
                                     "type" : "constant",
@@ -265,47 +255,159 @@
                                     "type" : "constant",
                                     "value" : ""
                                   },
-                                  "caption" : {
-                                    "type" : "constant"
-                                  },
-                                  "condensed" : {
-                                    "type" : "constant",
-                                    "value" : false
-                                  },
-                                  "bordered" : {
-                                    "type" : "constant",
-                                    "value" : false
-                                  },
-                                  "selectedRow" : {
-                                    "type" : "variable",
-                                    "value" : "registoIntervencoes_selected"
-                                  },
-                                  "columnsKey" : {
-                                    "type" : "constant",
-                                    "value" : [
-                                      "DataExecucao",
-                                      "descricao",
-                                      "NumeroHoras",
-                                      "Finalizado"
-                                    ]
-                                  },
                                   "dimension" : {
                                     "type" : "constant",
                                     "value" : 12
-                                  },
-                                  "content" : {
-                                    "type" : "expression",
-                                    "value" : "registoIntervencoes"
-                                  },
-                                  "zebraStriping" : {
-                                    "type" : "constant",
-                                    "value" : true
                                   }
                                 },
-                                "reference" : "17e5f854-5be8-45a5-a7c5-593e9a75fbec",
+                                "reference" : "45a80a2e-5e76-42c3-9762-66b11b6d4925",
                                 "hasValidationError" : false,
-                                "id" : "pbTable",
-                                "description" : ""
+                                "id" : "pbContainer",
+                                "description" : "Auto generate ui for business object \"com.company.model.RegistoIntervencoes\"",
+                                "rows" : [
+                                  [
+                                    {
+                                      "type" : "container",
+                                      "dimension" : {
+                                        "xs" : 12
+                                      },
+                                      "propertyValues" : {
+                                        "cssClasses" : {
+                                          "type" : "constant",
+                                          "value" : ""
+                                        },
+                                        "hidden" : {
+                                          "type" : "constant",
+                                          "value" : false
+                                        },
+                                        "repeatedCollection" : {
+                                          "type" : "variable"
+                                        }
+                                      },
+                                      "reference" : "868e4aea-e7c0-44f3-b253-eb7519d22db9",
+                                      "hasValidationError" : false,
+                                      "id" : "pbContainer",
+                                      "description" : "\"com.company.model.RegistoIntervencoes\" object from \"registoIntervencoes_1\" variable",
+                                      "rows" : [
+                                        [
+                                          {
+                                            "type" : "component",
+                                            "dimension" : {
+                                              "md" : 12,
+                                              "sm" : 12,
+                                              "xs" : 12,
+                                              "lg" : 12
+                                            },
+                                            "propertyValues" : {
+                                              "hidden" : {
+                                                "type" : "constant",
+                                                "value" : false
+                                              },
+                                              "level" : {
+                                                "type" : "constant",
+                                                "value" : "Level 4"
+                                              },
+                                              "cssClasses" : {
+                                                "type" : "constant",
+                                                "value" : ""
+                                              },
+                                              "text" : {
+                                                "type" : "interpolation",
+                                                "value" : "RegistoIntervencoes"
+                                              },
+                                              "alignment" : {
+                                                "type" : "constant",
+                                                "value" : "left"
+                                              },
+                                              "dimension" : {
+                                                "type" : "constant",
+                                                "value" : 12
+                                              }
+                                            },
+                                            "reference" : "b78b3dd8-7b38-4a3a-96f5-789e381fa598",
+                                            "hasValidationError" : false,
+                                            "id" : "pbTitle",
+                                            "description" : ""
+                                          }
+                                        ],
+                                        [
+                                          {
+                                            "type" : "component",
+                                            "dimension" : {
+                                              "md" : 12,
+                                              "sm" : 12,
+                                              "xs" : 12,
+                                              "lg" : 12
+                                            },
+                                            "propertyValues" : {
+                                              "headers" : {
+                                                "type" : "constant",
+                                                "value" : [
+                                                  "Data Execucao",
+                                                  "Descricao",
+                                                  "Numero Horas",
+                                                  "Finalizado"
+                                                ]
+                                              },
+                                              "allowHtml" : {
+                                                "type" : "constant",
+                                                "value" : true
+                                              },
+                                              "hidden" : {
+                                                "type" : "constant",
+                                                "value" : false
+                                              },
+                                              "cssClasses" : {
+                                                "type" : "constant",
+                                                "value" : ""
+                                              },
+                                              "caption" : {
+                                                "type" : "constant"
+                                              },
+                                              "condensed" : {
+                                                "type" : "constant",
+                                                "value" : false
+                                              },
+                                              "bordered" : {
+                                                "type" : "constant",
+                                                "value" : false
+                                              },
+                                              "selectedRow" : {
+                                                "type" : "variable",
+                                                "value" : "registoIntervencoes_1_selected"
+                                              },
+                                              "columnsKey" : {
+                                                "type" : "constant",
+                                                "value" : [
+                                                  "dataExecucao",
+                                                  "descricao",
+                                                  "numeroHoras",
+                                                  "finalizado"
+                                                ]
+                                              },
+                                              "dimension" : {
+                                                "type" : "constant",
+                                                "value" : 12
+                                              },
+                                              "content" : {
+                                                "type" : "expression",
+                                                "value" : "registoIntervencoes_1"
+                                              },
+                                              "zebraStriping" : {
+                                                "type" : "constant",
+                                                "value" : true
+                                              }
+                                            },
+                                            "reference" : "685da594-66f2-4847-842b-859ba2958c6f",
+                                            "hasValidationError" : false,
+                                            "id" : "pbTable",
+                                            "description" : ""
+                                          }
+                                        ]
+                                      ]
+                                    }
+                                  ]
+                                ]
                               }
                             ]
                           ]
@@ -345,6 +447,20 @@
       "exposed" : false
     },
     "registoIntervencoes_selected" : {
+      "type" : "constant",
+      "value" : [
+        ""
+      ],
+      "exposed" : false
+    },
+    "registoIntervencoes_1" : {
+      "type" : "businessdata",
+      "value" : [
+        "{\"displayValue\":\"find [com.company.model.RegistoIntervencoes]\",\"businessObjectName\":\"RegistoIntervencoes\",\"query\":{\"name\":\"find\",\"displayName\":\"find\"},\"id\":\"com.company.model.RegistoIntervencoes\",\"filters\":[],\"pagination\":{\"p\":\"0\",\"c\":\"10\"}}"
+      ],
+      "exposed" : false
+    },
+    "registoIntervencoes_1_selected" : {
       "type" : "constant",
       "value" : [
         ""
