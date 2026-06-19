@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "2cbb3ef3-1aa5-44f7-ac1c-abfeb169c9d4",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1781713113957,
+  "lastUpdate" : 1781912831376,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -116,7 +116,16 @@
         "dimension" : {
           "xs" : 12
         },
-        "propertyValues" : { },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          }
+        },
         "reference" : "89bfd185-d75d-42c7-9ee0-2fa311350a92",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
@@ -130,6 +139,46 @@
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "text" : {
+                    "type" : "interpolation",
+                    "value" : "Pedido de novas alterações"
+                  },
+                  "level" : {
+                    "type" : "constant",
+                    "value" : "Level 2"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "left"
+                  }
+                },
+                "reference" : "0263e4df-1d12-4385-8be2-7d88c0eb79c5",
+                "hasValidationError" : false,
+                "id" : "pbTitle"
+              }
+            ],
             [
               {
                 "type" : "component",
@@ -154,7 +203,7 @@
                   },
                   "text" : {
                     "type" : "interpolation",
-                    "value" : "Pedido de novas alterações"
+                    "value" : "O cliente não concordou com as alterções anterior, defina novas alterações funcionais."
                   },
                   "alignment" : {
                     "type" : "constant",
@@ -173,58 +222,6 @@
                 "hasValidationError" : false,
                 "id" : "pbTitle",
                 "description" : ""
-              }
-            ],
-            [
-              {
-                "type" : "component",
-                "dimension" : {
-                  "xs" : 12,
-                  "sm" : 12,
-                  "md" : 12,
-                  "lg" : 12
-                },
-                "propertyValues" : {
-                  "cssClasses" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "hidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "allowHTML" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "labelHidden" : {
-                    "type" : "constant",
-                    "value" : true
-                  },
-                  "label" : {
-                    "type" : "interpolation",
-                    "value" : "Default label"
-                  },
-                  "labelPosition" : {
-                    "type" : "constant",
-                    "value" : "top"
-                  },
-                  "labelWidth" : {
-                    "type" : "constant",
-                    "value" : 4
-                  },
-                  "text" : {
-                    "type" : "interpolation",
-                    "value" : "O cliente não concordou com as alterções anterior, defina novas alteraçoes funcionais."
-                  },
-                  "alignment" : {
-                    "type" : "constant",
-                    "value" : "left"
-                  }
-                },
-                "reference" : "2e8d6fed-45a6-41de-94cb-17400c2aa2bd",
-                "hasValidationError" : false,
-                "id" : "pbText"
               }
             ],
             [

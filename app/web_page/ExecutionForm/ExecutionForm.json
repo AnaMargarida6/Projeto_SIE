@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "2b8df912-8e13-450e-a030-1912f25b8acb",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1781823074899,
+  "lastUpdate" : 1781913114046,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -146,7 +146,7 @@
                   },
                   "level" : {
                     "type" : "constant",
-                    "value" : "Level 4"
+                    "value" : "Level 2"
                   },
                   "cssClasses" : {
                     "type" : "constant",
@@ -154,7 +154,7 @@
                   },
                   "text" : {
                     "type" : "interpolation",
-                    "value" : "Pedido"
+                    "value" : "Registo da execução do pedido"
                   },
                   "alignment" : {
                     "type" : "constant",
@@ -163,6 +163,10 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : false
                   }
                 },
                 "reference" : "e25b2243-32f1-4bf7-b1e8-4675fb8729a2",
@@ -602,6 +606,46 @@
                           {
                             "type" : "component",
                             "dimension" : {
+                              "xs" : 12,
+                              "sm" : 12,
+                              "md" : 12,
+                              "lg" : 12
+                            },
+                            "propertyValues" : {
+                              "cssClasses" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "hidden" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "allowHTML" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "text" : {
+                                "type" : "interpolation",
+                                "value" : "A execução encontra-se finalizada?"
+                              },
+                              "level" : {
+                                "type" : "constant",
+                                "value" : "Level 4"
+                              },
+                              "alignment" : {
+                                "type" : "constant",
+                                "value" : "left"
+                              }
+                            },
+                            "reference" : "4b469b1d-80f1-4036-92e1-0e8a2a55184f",
+                            "hasValidationError" : false,
+                            "id" : "pbTitle"
+                          }
+                        ],
+                        [
+                          {
+                            "type" : "component",
+                            "dimension" : {
                               "md" : 12,
                               "sm" : 12,
                               "xs" : 12,
@@ -626,7 +670,7 @@
                               },
                               "label" : {
                                 "type" : "interpolation",
-                                "value" : "Finalizado"
+                                "value" : "Finalizada"
                               },
                               "dimension" : {
                                 "type" : "constant",
@@ -635,6 +679,14 @@
                               "value" : {
                                 "type" : "variable",
                                 "value" : "pedido.intervencoes.finalizado"
+                              },
+                              "required" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "allowHTML" : {
+                                "type" : "constant",
+                                "value" : false
                               }
                             },
                             "reference" : "a0754fbe-ecf2-4117-ab6a-0fce803614d8",

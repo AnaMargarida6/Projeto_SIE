@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "8d891659-876b-4d35-9020-9e8445568eb7",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1780939358060,
+  "lastUpdate" : 1781913374138,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -43,7 +43,7 @@
                   },
                   "level" : {
                     "type" : "constant",
-                    "value" : "Level 4"
+                    "value" : "Level 2"
                   },
                   "cssClasses" : {
                     "type" : "constant",
@@ -51,7 +51,7 @@
                   },
                   "text" : {
                     "type" : "interpolation",
-                    "value" : "Pedido"
+                    "value" : "Novo pedido"
                   },
                   "alignment" : {
                     "type" : "constant",
@@ -60,12 +60,56 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : false
                   }
                 },
                 "reference" : "ffb0038f-fc27-447a-b28c-a4c1f4c863d5",
                 "hasValidationError" : false,
                 "id" : "pbTitle",
                 "description" : ""
+              }
+            ],
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "text" : {
+                    "type" : "interpolation",
+                    "value" : "Insira a descrição do seu pedido e o seu email para contacto posterior."
+                  },
+                  "level" : {
+                    "type" : "constant",
+                    "value" : "Level 4"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "left"
+                  }
+                },
+                "reference" : "001755e5-eb10-413a-8b52-27ba1477643f",
+                "hasValidationError" : false,
+                "id" : "pbTitle"
               }
             ],
             [

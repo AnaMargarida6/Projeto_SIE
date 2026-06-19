@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "c1e350ed-c623-4822-8e1c-7f6a2242a142",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1780332343294,
+  "lastUpdate" : 1781912399098,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -134,6 +134,46 @@
               {
                 "type" : "component",
                 "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "text" : {
+                    "type" : "interpolation",
+                    "value" : "Pedido"
+                  },
+                  "level" : {
+                    "type" : "constant",
+                    "value" : "Level 2"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "left"
+                  }
+                },
+                "reference" : "cf29f85c-40de-4079-9635-347f275c7937",
+                "hasValidationError" : false,
+                "id" : "pbTitle"
+              }
+            ],
+            [
+              {
+                "type" : "component",
+                "dimension" : {
                   "md" : 12,
                   "sm" : 12,
                   "xs" : 12,
@@ -154,7 +194,7 @@
                   },
                   "text" : {
                     "type" : "interpolation",
-                    "value" : "Pedido"
+                    "value" : "Se o tempo de esforço do pedido for <= 1 dia selecione, por favor."
                   },
                   "alignment" : {
                     "type" : "constant",
@@ -163,6 +203,10 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : false
                   }
                 },
                 "reference" : "7d139cdf-aecf-42fb-9f1a-b1020ea8f787",
