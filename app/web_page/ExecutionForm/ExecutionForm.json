@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "2b8df912-8e13-450e-a030-1912f25b8acb",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1781913114046,
+  "lastUpdate" : 1781986161391,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -99,6 +99,18 @@
                 "dimension" : {
                   "type" : "constant",
                   "value" : 12
+                },
+                "allowHTML" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "labelPosition" : {
+                  "type" : "constant",
+                  "value" : "top"
+                },
+                "labelWidth" : {
+                  "type" : "constant",
+                  "value" : 4
                 }
               },
               "reference" : "83e5f291-0a03-4616-9381-4aa6ccab7783",
@@ -461,11 +473,15 @@
                               },
                               "value" : {
                                 "type" : "variable",
-                                "value" : "pedido.intervencoes.dataExecucao"
+                                "value" : "novaIntervencao.dataExecucao"
                               },
                               "withTimeZone" : {
                                 "type" : "constant",
                                 "value" : true
+                              },
+                              "allowHTML" : {
+                                "type" : "constant",
+                                "value" : false
                               }
                             },
                             "reference" : "9c0242d0-43f8-4b1a-aa01-454b6024bc63",
@@ -525,11 +541,37 @@
                               },
                               "value" : {
                                 "type" : "variable",
-                                "value" : "pedido.intervencoes.descricao"
+                                "value" : "novaIntervencao.descricao"
                               },
                               "required" : {
                                 "type" : "constant",
                                 "value" : true
+                              },
+                              "allowHTML" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "minLength" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "maxLength" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "debounce" : {
+                                "type" : "constant",
+                                "value" : 0
+                              },
+                              "min" : {
+                                "type" : "constant"
+                              },
+                              "max" : {
+                                "type" : "constant"
+                              },
+                              "step" : {
+                                "type" : "constant",
+                                "value" : 1
                               }
                             },
                             "reference" : "92a9b219-6ede-4d1f-bf5c-ed62ce0aff47",
@@ -589,11 +631,37 @@
                               },
                               "value" : {
                                 "type" : "variable",
-                                "value" : "pedido.intervencoes.numeroHoras"
+                                "value" : "novaIntervencao.numeroHoras"
                               },
                               "required" : {
                                 "type" : "constant",
                                 "value" : true
+                              },
+                              "allowHTML" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "minLength" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "maxLength" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "debounce" : {
+                                "type" : "constant",
+                                "value" : 0
+                              },
+                              "min" : {
+                                "type" : "constant"
+                              },
+                              "max" : {
+                                "type" : "constant"
+                              },
+                              "step" : {
+                                "type" : "constant",
+                                "value" : 1
                               }
                             },
                             "reference" : "83dae7d3-6a65-452e-90f9-f1b017a6f64b",
@@ -678,7 +746,7 @@
                               },
                               "value" : {
                                 "type" : "variable",
-                                "value" : "pedido.intervencoes.finalizado"
+                                "value" : "novaIntervencao.finalizado"
                               },
                               "required" : {
                                 "type" : "constant",
@@ -869,12 +937,7 @@
         "\treturn {",
         "\t\t//map pedido variable to expected task contract input",
         "\t\tpedidoInput: {",
-        "\t\t\tintervencoes: $data.pedido.intervencoes ? {",
-        "\t\t\t\tdataExecucao: $data.pedido.intervencoes.dataExecucao !== undefined ? $data.pedido.intervencoes.dataExecucao : null,",
-        "\t\t\t\tdescricao: $data.pedido.intervencoes.descricao !== undefined ? $data.pedido.intervencoes.descricao : null,",
-        "\t\t\t\tnumeroHoras: $data.pedido.intervencoes.numeroHoras !== undefined ? $data.pedido.intervencoes.numeroHoras : null,",
-        "\t\t\t\tfinalizado: $data.pedido.intervencoes.finalizado !== undefined ? $data.pedido.intervencoes.finalizado : null",
-        "\t\t\t} : null",
+        "\t\t\tintervencoes: $data.novaIntervencao",
         "\t\t}",
         "\t}",
         "}"
@@ -899,6 +962,18 @@
       "type" : "urlparameter",
       "value" : [
         "id"
+      ],
+      "exposed" : false
+    },
+    "novaIntervencao" : {
+      "type" : "json",
+      "value" : [
+        "{",
+        "  \"dataExecucao\": null,",
+        "  \"descricao\": \"\",",
+        "  \"numeroHoras\": null,",
+        "  \"finalizado\": false",
+        "}"
       ],
       "exposed" : false
     }
