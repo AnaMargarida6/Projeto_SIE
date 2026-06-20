@@ -4,7 +4,7 @@
   "type" : "page",
   "uuid" : "0fa5cb91-c6aa-470b-8ab3-ee93e9f427ee",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1781981951762,
+  "lastUpdate" : 1781989662443,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -399,7 +399,7 @@
                                               },
                                               "content" : {
                                                 "type" : "expression",
-                                                "value" : "registoIntervencoes_1"
+                                                "value" : "pedidos_selected.intervencoes"
                                               },
                                               "zebraStriping" : {
                                                 "type" : "constant",
@@ -559,7 +559,7 @@
                                               },
                                               "value" : {
                                                 "type" : "variable",
-                                                "value" : "pedidos_selected.intervencoes.dataExecucao"
+                                                "value" : "registoIntervencoes_1_selected.dataExecucao"
                                               },
                                               "debounce" : {
                                                 "type" : "constant",
@@ -642,7 +642,7 @@
                                               },
                                               "value" : {
                                                 "type" : "variable",
-                                                "value" : "pedidos_selected.intervencoes.descricao"
+                                                "value" : "registoIntervencoes_1_selected.descricao"
                                               },
                                               "debounce" : {
                                                 "type" : "constant",
@@ -725,7 +725,7 @@
                                               },
                                               "value" : {
                                                 "type" : "variable",
-                                                "value" : "pedidos_selected.intervencoes.numeroHoras[0]"
+                                                "value" : "registoIntervencoes_1_selected.numeroHoras"
                                               },
                                               "debounce" : {
                                                 "type" : "constant",
@@ -808,7 +808,7 @@
                                               },
                                               "value" : {
                                                 "type" : "variable",
-                                                "value" : "pedidos_selected.intervencoes.finalizado"
+                                                "value" : "registoIntervencoes_1_selected.finalizado"
                                               },
                                               "debounce" : {
                                                 "type" : "constant",
