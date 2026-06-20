@@ -4,7 +4,7 @@
   "type" : "page",
   "uuid" : "0fa5cb91-c6aa-470b-8ab3-ee93e9f427ee",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1781989662443,
+  "lastUpdate" : 1781993600763,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -317,7 +317,7 @@
                                               },
                                               "text" : {
                                                 "type" : "interpolation",
-                                                "value" : "Registo de todas as Intervenções"
+                                                "value" : "Registo das intervenções"
                                               },
                                               "alignment" : {
                                                 "type" : "constant",
@@ -336,6 +336,46 @@
                                             "hasValidationError" : false,
                                             "id" : "pbTitle",
                                             "description" : ""
+                                          }
+                                        ],
+                                        [
+                                          {
+                                            "type" : "component",
+                                            "dimension" : {
+                                              "xs" : 12,
+                                              "sm" : 12,
+                                              "md" : 12,
+                                              "lg" : 12
+                                            },
+                                            "propertyValues" : {
+                                              "cssClasses" : {
+                                                "type" : "constant",
+                                                "value" : ""
+                                              },
+                                              "hidden" : {
+                                                "type" : "constant",
+                                                "value" : false
+                                              },
+                                              "allowHTML" : {
+                                                "type" : "constant",
+                                                "value" : false
+                                              },
+                                              "text" : {
+                                                "type" : "interpolation",
+                                                "value" : "Selecione um pedido na tabela primeiramente"
+                                              },
+                                              "level" : {
+                                                "type" : "constant",
+                                                "value" : "Level 5"
+                                              },
+                                              "alignment" : {
+                                                "type" : "constant",
+                                                "value" : "left"
+                                              }
+                                            },
+                                            "reference" : "4d1e7786-3e5c-4326-a4cc-44d038b27eff",
+                                            "hasValidationError" : false,
+                                            "id" : "pbTitle"
                                           }
                                         ],
                                         [
@@ -444,7 +484,7 @@
                                               },
                                               "text" : {
                                                 "type" : "interpolation",
-                                                "value" : "Registo da intervenção de um pedido específico"
+                                                "value" : "Detalhes da intervenção"
                                               },
                                               "level" : {
                                                 "type" : "constant",
@@ -484,7 +524,7 @@
                                               },
                                               "text" : {
                                                 "type" : "interpolation",
-                                                "value" : "Selecione um pedido na tabela primeiramente"
+                                                "value" : "Selecione uma intervenção na tabela de registos primeiramente."
                                               },
                                               "level" : {
                                                 "type" : "constant",
@@ -495,7 +535,7 @@
                                                 "value" : "left"
                                               }
                                             },
-                                            "reference" : "4d1e7786-3e5c-4326-a4cc-44d038b27eff",
+                                            "reference" : "d7e5111b-57ad-4c03-8001-db94e176ba95",
                                             "hasValidationError" : false,
                                             "id" : "pbTitle"
                                           }
