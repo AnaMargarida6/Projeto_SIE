@@ -4,7 +4,7 @@
   "type" : "page",
   "uuid" : "0fa5cb91-c6aa-470b-8ab3-ee93e9f427ee",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1781823339194,
+  "lastUpdate" : 1781981951762,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -78,7 +78,7 @@
                       },
                       "level" : {
                         "type" : "constant",
-                        "value" : "Level 4"
+                        "value" : "Level 2"
                       },
                       "cssClasses" : {
                         "type" : "constant",
@@ -86,7 +86,7 @@
                       },
                       "text" : {
                         "type" : "interpolation",
-                        "value" : "Pedido"
+                        "value" : "Lista de Pedidos"
                       },
                       "alignment" : {
                         "type" : "constant",
@@ -95,6 +95,10 @@
                       "dimension" : {
                         "type" : "constant",
                         "value" : 12
+                      },
+                      "allowHTML" : {
+                        "type" : "constant",
+                        "value" : false
                       }
                     },
                     "reference" : "fa9863eb-d224-410d-b1ec-ac41781cec9f",
@@ -116,12 +120,12 @@
                       "headers" : {
                         "type" : "constant",
                         "value" : [
-                          "Descricao",
-                          "Tempo Esforco",
-                          "Concordancia",
+                          "Descrição",
+                          "Tempo Esforço",
+                          "Concordância com cliente",
                           "Novo Acordo",
-                          "Tempo Esforco1d",
-                          "Alteracao",
+                          "Tempo Esforço 1d",
+                          "Alteração",
                           "Email"
                         ]
                       },
@@ -305,7 +309,7 @@
                                               },
                                               "level" : {
                                                 "type" : "constant",
-                                                "value" : "Level 4"
+                                                "value" : "Level 3"
                                               },
                                               "cssClasses" : {
                                                 "type" : "constant",
@@ -313,7 +317,7 @@
                                               },
                                               "text" : {
                                                 "type" : "interpolation",
-                                                "value" : "RegistoIntervencoes"
+                                                "value" : "Registo de todas as Intervenções"
                                               },
                                               "alignment" : {
                                                 "type" : "constant",
@@ -322,6 +326,10 @@
                                               "dimension" : {
                                                 "type" : "constant",
                                                 "value" : 12
+                                              },
+                                              "allowHTML" : {
+                                                "type" : "constant",
+                                                "value" : false
                                               }
                                             },
                                             "reference" : "b78b3dd8-7b38-4a3a-96f5-789e381fa598",
@@ -343,9 +351,9 @@
                                               "headers" : {
                                                 "type" : "constant",
                                                 "value" : [
-                                                  "Data Execucao",
-                                                  "Descricao",
-                                                  "Numero Horas",
+                                                  "Data Execução",
+                                                  "Descrição",
+                                                  "Número Horas",
                                                   "Finalizado"
                                                 ]
                                               },
@@ -396,12 +404,434 @@
                                               "zebraStriping" : {
                                                 "type" : "constant",
                                                 "value" : true
+                                              },
+                                              "allowHTML" : {
+                                                "type" : "constant",
+                                                "value" : false
+                                              },
+                                              "striped" : {
+                                                "type" : "constant",
+                                                "value" : true
                                               }
                                             },
                                             "reference" : "685da594-66f2-4847-842b-859ba2958c6f",
                                             "hasValidationError" : false,
                                             "id" : "pbTable",
                                             "description" : ""
+                                          }
+                                        ],
+                                        [
+                                          {
+                                            "type" : "component",
+                                            "dimension" : {
+                                              "xs" : 12,
+                                              "sm" : 12,
+                                              "md" : 12,
+                                              "lg" : 12
+                                            },
+                                            "propertyValues" : {
+                                              "cssClasses" : {
+                                                "type" : "constant",
+                                                "value" : ""
+                                              },
+                                              "hidden" : {
+                                                "type" : "constant",
+                                                "value" : false
+                                              },
+                                              "allowHTML" : {
+                                                "type" : "constant",
+                                                "value" : false
+                                              },
+                                              "text" : {
+                                                "type" : "interpolation",
+                                                "value" : "Registo da intervenção de um pedido específico"
+                                              },
+                                              "level" : {
+                                                "type" : "constant",
+                                                "value" : "Level 3"
+                                              },
+                                              "alignment" : {
+                                                "type" : "constant",
+                                                "value" : "left"
+                                              }
+                                            },
+                                            "reference" : "48a0cd7d-a243-441a-baac-ee86c17db0ed",
+                                            "hasValidationError" : false,
+                                            "id" : "pbTitle"
+                                          }
+                                        ],
+                                        [
+                                          {
+                                            "type" : "component",
+                                            "dimension" : {
+                                              "xs" : 12,
+                                              "sm" : 12,
+                                              "md" : 12,
+                                              "lg" : 12
+                                            },
+                                            "propertyValues" : {
+                                              "cssClasses" : {
+                                                "type" : "constant",
+                                                "value" : ""
+                                              },
+                                              "hidden" : {
+                                                "type" : "constant",
+                                                "value" : false
+                                              },
+                                              "allowHTML" : {
+                                                "type" : "constant",
+                                                "value" : false
+                                              },
+                                              "text" : {
+                                                "type" : "interpolation",
+                                                "value" : "Selecione um pedido na tabela primeiramente"
+                                              },
+                                              "level" : {
+                                                "type" : "constant",
+                                                "value" : "Level 5"
+                                              },
+                                              "alignment" : {
+                                                "type" : "constant",
+                                                "value" : "left"
+                                              }
+                                            },
+                                            "reference" : "4d1e7786-3e5c-4326-a4cc-44d038b27eff",
+                                            "hasValidationError" : false,
+                                            "id" : "pbTitle"
+                                          }
+                                        ],
+                                        [
+                                          {
+                                            "type" : "component",
+                                            "dimension" : {
+                                              "xs" : 12,
+                                              "sm" : 12,
+                                              "md" : 3,
+                                              "lg" : 3
+                                            },
+                                            "propertyValues" : {
+                                              "cssClasses" : {
+                                                "type" : "constant",
+                                                "value" : ""
+                                              },
+                                              "hidden" : {
+                                                "type" : "constant",
+                                                "value" : false
+                                              },
+                                              "required" : {
+                                                "type" : "constant",
+                                                "value" : false
+                                              },
+                                              "allowHTML" : {
+                                                "type" : "constant",
+                                                "value" : false
+                                              },
+                                              "minLength" : {
+                                                "type" : "constant",
+                                                "value" : ""
+                                              },
+                                              "maxLength" : {
+                                                "type" : "constant",
+                                                "value" : ""
+                                              },
+                                              "readOnly" : {
+                                                "type" : "constant",
+                                                "value" : true
+                                              },
+                                              "labelHidden" : {
+                                                "type" : "constant",
+                                                "value" : false
+                                              },
+                                              "label" : {
+                                                "type" : "interpolation",
+                                                "value" : "Data Execução"
+                                              },
+                                              "labelPosition" : {
+                                                "type" : "constant",
+                                                "value" : "top"
+                                              },
+                                              "labelWidth" : {
+                                                "type" : "constant",
+                                                "value" : 4
+                                              },
+                                              "placeholder" : {
+                                                "type" : "interpolation"
+                                              },
+                                              "value" : {
+                                                "type" : "variable",
+                                                "value" : "pedidos_selected.intervencoes.dataExecucao"
+                                              },
+                                              "debounce" : {
+                                                "type" : "constant",
+                                                "value" : 0
+                                              },
+                                              "type" : {
+                                                "type" : "constant",
+                                                "value" : "text"
+                                              },
+                                              "min" : {
+                                                "type" : "constant"
+                                              },
+                                              "max" : {
+                                                "type" : "constant"
+                                              },
+                                              "step" : {
+                                                "type" : "constant",
+                                                "value" : 1
+                                              }
+                                            },
+                                            "reference" : "887181d8-b824-4cb4-8997-bdf2f0007778",
+                                            "hasValidationError" : false,
+                                            "id" : "pbInput"
+                                          },
+                                          {
+                                            "type" : "component",
+                                            "dimension" : {
+                                              "xs" : 12,
+                                              "sm" : 12,
+                                              "md" : 3,
+                                              "lg" : 3
+                                            },
+                                            "propertyValues" : {
+                                              "cssClasses" : {
+                                                "type" : "constant",
+                                                "value" : ""
+                                              },
+                                              "hidden" : {
+                                                "type" : "constant",
+                                                "value" : false
+                                              },
+                                              "required" : {
+                                                "type" : "constant",
+                                                "value" : false
+                                              },
+                                              "allowHTML" : {
+                                                "type" : "constant",
+                                                "value" : false
+                                              },
+                                              "minLength" : {
+                                                "type" : "constant",
+                                                "value" : ""
+                                              },
+                                              "maxLength" : {
+                                                "type" : "constant",
+                                                "value" : ""
+                                              },
+                                              "readOnly" : {
+                                                "type" : "constant",
+                                                "value" : true
+                                              },
+                                              "labelHidden" : {
+                                                "type" : "constant",
+                                                "value" : false
+                                              },
+                                              "label" : {
+                                                "type" : "interpolation",
+                                                "value" : "Descrição"
+                                              },
+                                              "labelPosition" : {
+                                                "type" : "constant",
+                                                "value" : "top"
+                                              },
+                                              "labelWidth" : {
+                                                "type" : "constant",
+                                                "value" : 4
+                                              },
+                                              "placeholder" : {
+                                                "type" : "interpolation"
+                                              },
+                                              "value" : {
+                                                "type" : "variable",
+                                                "value" : "pedidos_selected.intervencoes.descricao"
+                                              },
+                                              "debounce" : {
+                                                "type" : "constant",
+                                                "value" : 0
+                                              },
+                                              "type" : {
+                                                "type" : "constant",
+                                                "value" : "text"
+                                              },
+                                              "min" : {
+                                                "type" : "constant"
+                                              },
+                                              "max" : {
+                                                "type" : "constant"
+                                              },
+                                              "step" : {
+                                                "type" : "constant",
+                                                "value" : 1
+                                              }
+                                            },
+                                            "reference" : "cbbb67a8-8063-4689-9f3d-8d746e74cdf7",
+                                            "hasValidationError" : false,
+                                            "id" : "pbInput"
+                                          },
+                                          {
+                                            "type" : "component",
+                                            "dimension" : {
+                                              "xs" : 12,
+                                              "sm" : 12,
+                                              "md" : 3,
+                                              "lg" : 3
+                                            },
+                                            "propertyValues" : {
+                                              "cssClasses" : {
+                                                "type" : "constant",
+                                                "value" : ""
+                                              },
+                                              "hidden" : {
+                                                "type" : "constant",
+                                                "value" : false
+                                              },
+                                              "required" : {
+                                                "type" : "constant",
+                                                "value" : false
+                                              },
+                                              "allowHTML" : {
+                                                "type" : "constant",
+                                                "value" : false
+                                              },
+                                              "minLength" : {
+                                                "type" : "constant",
+                                                "value" : ""
+                                              },
+                                              "maxLength" : {
+                                                "type" : "constant",
+                                                "value" : ""
+                                              },
+                                              "readOnly" : {
+                                                "type" : "constant",
+                                                "value" : true
+                                              },
+                                              "labelHidden" : {
+                                                "type" : "constant",
+                                                "value" : false
+                                              },
+                                              "label" : {
+                                                "type" : "interpolation",
+                                                "value" : "Número de Horas"
+                                              },
+                                              "labelPosition" : {
+                                                "type" : "constant",
+                                                "value" : "top"
+                                              },
+                                              "labelWidth" : {
+                                                "type" : "constant",
+                                                "value" : 4
+                                              },
+                                              "placeholder" : {
+                                                "type" : "interpolation"
+                                              },
+                                              "value" : {
+                                                "type" : "variable",
+                                                "value" : "pedidos_selected.intervencoes.numeroHoras[0]"
+                                              },
+                                              "debounce" : {
+                                                "type" : "constant",
+                                                "value" : 0
+                                              },
+                                              "type" : {
+                                                "type" : "constant",
+                                                "value" : "text"
+                                              },
+                                              "min" : {
+                                                "type" : "constant"
+                                              },
+                                              "max" : {
+                                                "type" : "constant"
+                                              },
+                                              "step" : {
+                                                "type" : "constant",
+                                                "value" : 1
+                                              }
+                                            },
+                                            "reference" : "5540b03a-4df9-45e8-9858-69144f39f8a1",
+                                            "hasValidationError" : false,
+                                            "id" : "pbInput"
+                                          },
+                                          {
+                                            "type" : "component",
+                                            "dimension" : {
+                                              "xs" : 12,
+                                              "sm" : 12,
+                                              "md" : 3,
+                                              "lg" : 3
+                                            },
+                                            "propertyValues" : {
+                                              "cssClasses" : {
+                                                "type" : "constant",
+                                                "value" : ""
+                                              },
+                                              "hidden" : {
+                                                "type" : "constant",
+                                                "value" : false
+                                              },
+                                              "required" : {
+                                                "type" : "constant",
+                                                "value" : false
+                                              },
+                                              "allowHTML" : {
+                                                "type" : "constant",
+                                                "value" : false
+                                              },
+                                              "minLength" : {
+                                                "type" : "constant",
+                                                "value" : ""
+                                              },
+                                              "maxLength" : {
+                                                "type" : "constant",
+                                                "value" : ""
+                                              },
+                                              "readOnly" : {
+                                                "type" : "constant",
+                                                "value" : true
+                                              },
+                                              "labelHidden" : {
+                                                "type" : "constant",
+                                                "value" : false
+                                              },
+                                              "label" : {
+                                                "type" : "interpolation",
+                                                "value" : "Pedido Finalizado?"
+                                              },
+                                              "labelPosition" : {
+                                                "type" : "constant",
+                                                "value" : "top"
+                                              },
+                                              "labelWidth" : {
+                                                "type" : "constant",
+                                                "value" : 4
+                                              },
+                                              "placeholder" : {
+                                                "type" : "interpolation"
+                                              },
+                                              "value" : {
+                                                "type" : "variable",
+                                                "value" : "pedidos_selected.intervencoes.finalizado"
+                                              },
+                                              "debounce" : {
+                                                "type" : "constant",
+                                                "value" : 0
+                                              },
+                                              "type" : {
+                                                "type" : "constant",
+                                                "value" : "text"
+                                              },
+                                              "min" : {
+                                                "type" : "constant"
+                                              },
+                                              "max" : {
+                                                "type" : "constant"
+                                              },
+                                              "step" : {
+                                                "type" : "constant",
+                                                "value" : 1
+                                              }
+                                            },
+                                            "reference" : "823a9085-dc92-4d09-8e5c-59b1c89ed397",
+                                            "hasValidationError" : false,
+                                            "id" : "pbInput"
                                           }
                                         ]
                                       ]

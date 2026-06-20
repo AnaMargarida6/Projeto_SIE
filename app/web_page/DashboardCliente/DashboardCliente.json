@@ -4,7 +4,7 @@
   "type" : "page",
   "uuid" : "fad766b3-fd33-4850-94e7-588b3995e3c8",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1781792784588,
+  "lastUpdate" : 1781979871606,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -78,7 +78,7 @@
                       },
                       "level" : {
                         "type" : "constant",
-                        "value" : "Level 4"
+                        "value" : "Level 2"
                       },
                       "cssClasses" : {
                         "type" : "constant",
@@ -86,7 +86,7 @@
                       },
                       "text" : {
                         "type" : "interpolation",
-                        "value" : "Pedido"
+                        "value" : "Lista de Pedido submetidos"
                       },
                       "alignment" : {
                         "type" : "constant",
@@ -95,6 +95,10 @@
                       "dimension" : {
                         "type" : "constant",
                         "value" : 12
+                      },
+                      "allowHTML" : {
+                        "type" : "constant",
+                        "value" : false
                       }
                     },
                     "reference" : "e31af0f1-c300-4a92-9aa4-c769bb04f16c",
@@ -173,7 +177,7 @@
                             },
                             "text" : {
                               "type" : "interpolation",
-                              "value" : "Pedido"
+                              "value" : "Na tabela visualiza-se as características dos pedidos:"
                             },
                             "alignment" : {
                               "type" : "constant",
@@ -182,6 +186,10 @@
                             "dimension" : {
                               "type" : "constant",
                               "value" : 12
+                            },
+                            "allowHTML" : {
+                              "type" : "constant",
+                              "value" : false
                             }
                           },
                           "reference" : "f727acc8-60ca-42d7-8e1c-71e004d54eae",
@@ -203,10 +211,10 @@
                             "headers" : {
                               "type" : "constant",
                               "value" : [
-                                "Descricao",
-                                "Concordancia",
+                                "Descrição",
+                                "Concordância",
                                 "Novo Acordo",
-                                "Alteracao",
+                                "Alteração ao pedido",
                                 "Email"
                               ]
                             },

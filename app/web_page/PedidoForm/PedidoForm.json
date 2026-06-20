@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "8d891659-876b-4d35-9020-9e8445568eb7",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1781913374138,
+  "lastUpdate" : 1781981453165,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -249,7 +249,7 @@
                         },
                         "type" : {
                           "type" : "constant",
-                          "value" : "text"
+                          "value" : "email"
                         },
                         "dimension" : {
                           "type" : "constant",
@@ -262,6 +262,32 @@
                         "required" : {
                           "type" : "constant",
                           "value" : true
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "debounce" : {
+                          "type" : "constant",
+                          "value" : 0
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
                         }
                       },
                       "reference" : "14b76aa5-a1a3-4de8-ac3f-180beceb9c2a",
