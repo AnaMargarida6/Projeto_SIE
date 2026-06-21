@@ -485,7 +485,7 @@
                 <expression xmi:type="expression:Expression" xmi:id="_17aDvlz9EfGwRdsuhEtToQ" content="" returnTypeFixed="true"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_17aDv1z9EfGwRdsuhEtToQ" key="subject">
-                <expression xmi:type="expression:Expression" xmi:id="_17aDwFz9EfGwRdsuhEtToQ" name="AlteracoesFuncionais" content="AlteracoesFuncionais" returnTypeFixed="true"/>
+                <expression xmi:type="expression:Expression" xmi:id="_17aDwFz9EfGwRdsuhEtToQ" name="Alterações Funcionais" content="Alterações Funcionais" returnTypeFixed="true"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_17aDwVz9EfGwRdsuhEtToQ" key="html">
                 <expression xmi:type="expression:Expression" xmi:id="_17aDwlz9EfGwRdsuhEtToQ" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
@@ -577,7 +577,7 @@
         <targetForm xmi:type="expression:Expression" xmi:id="_PVQF0GNWEfGOiLHaCO_A-Q" name="PedidoForm" content="8d891659-876b-4d35-9020-9e8445568eb7" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_IerNNlLPEfGj_IdrBrDnWg">
-        <targetForm xmi:type="expression:Expression" xmi:id="_IerNN1LPEfGj_IdrBrDnWg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_TN28MG10EfGOqLOPW4LDXA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </overviewFormMapping>
       <connections xmi:type="process:SequenceFlow" xmi:id="_PA_DkFLPEfGj_IdrBrDnWg" target="_IerNJ1LPEfGj_IdrBrDnWg" source="_k3HFgFLTEfGj_IdrBrDnWg">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_PA_qoFLPEfGj_IdrBrDnWg"/>
@@ -593,7 +593,7 @@
           <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_egQV4Fz_EfGaE_Ux3ayYZA" name="pedido" dataType="_IerNVFLPEfGj_IdrBrDnWg" className="com.company.model.Pedido"/>
         </condition>
       </connections>
-      <connections xmi:type="process:SequenceFlow" xmi:id="_ZAI0UFLPEfGj_IdrBrDnWg" name="sim" target="_RpBJYF3eEfGbr_eB3ZGNzQ" source="_Sy_VkFLPEfGj_IdrBrDnWg">
+      <connections xmi:type="process:SequenceFlow" xmi:id="_ZAI0UFLPEfGj_IdrBrDnWg" name="sim" target="_RpBJYF3eEfGbr_eB3ZGNzQ" source="_Sy_VkFLPEfGj_IdrBrDnWg" isDefault="true">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_ZAI0UVLPEfGj_IdrBrDnWg"/>
         <condition xmi:type="expression:Expression" xmi:id="_ZAI0UlLPEfGj_IdrBrDnWg" name="newScript()" content="pedido.tempoEsforco1d  == true" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
           <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_AuHy8FhWEfGoff08btB4kw" name="pedido" dataType="_IerNVFLPEfGj_IdrBrDnWg" className="com.company.model.Pedido"/>
@@ -609,7 +609,7 @@
           <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_-iHvEFhNEfG4N6yuB2YJkg" name="pedido" dataType="_IerNVFLPEfGj_IdrBrDnWg" className="com.company.model.Pedido"/>
         </condition>
       </connections>
-      <connections xmi:type="process:SequenceFlow" xmi:id="_8-QDoFLeEfGX9c_kvNQ8rQ" name="&lt;=5d" target="_C4-8sFLfEfGX9c_kvNQ8rQ" source="_CIJ8sFLfEfGX9c_kvNQ8rQ">
+      <connections xmi:type="process:SequenceFlow" xmi:id="_8-QDoFLeEfGX9c_kvNQ8rQ" name="&lt;=5d" target="_C4-8sFLfEfGX9c_kvNQ8rQ" source="_CIJ8sFLfEfGX9c_kvNQ8rQ" isDefault="true">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_8-QDoVLeEfGX9c_kvNQ8rQ"/>
         <condition xmi:type="expression:Expression" xmi:id="_8-QDolLeEfGX9c_kvNQ8rQ" name="newScript()" content="pedido.tempoEsforco  &lt;= 5" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
           <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_QN6wgFhQEfG4N6yuB2YJkg" name="pedido" dataType="_IerNVFLPEfGj_IdrBrDnWg" className="com.company.model.Pedido"/>
@@ -635,7 +635,7 @@
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_Q20JgFLfEfGX9c_kvNQ8rQ"/>
         <condition xmi:type="expression:Expression" xmi:id="_Q20JgVLfEfGX9c_kvNQ8rQ" name="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
-      <connections xmi:type="process:SequenceFlow" xmi:id="_n1tHIlLfEfGX9c_kvNQ8rQ" name="1 a 3d" target="_oU_rMFLfEfGX9c_kvNQ8rQ" source="_C4-8sFLfEfGX9c_kvNQ8rQ">
+      <connections xmi:type="process:SequenceFlow" xmi:id="_n1tHIlLfEfGX9c_kvNQ8rQ" name="1 a 3d" target="_oU_rMFLfEfGX9c_kvNQ8rQ" source="_C4-8sFLfEfGX9c_kvNQ8rQ" isDefault="true">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_n1tuMFLfEfGX9c_kvNQ8rQ"/>
         <condition xmi:type="expression:Expression" xmi:id="_n1tuMVLfEfGX9c_kvNQ8rQ" name="newScript()" content="pedido.tempoEsforco  > 1 &amp;&amp; pedido.tempoEsforco   &lt;=  3" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
           <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_bqMUoFhSEfG4N6yuB2YJkg" name="pedido" dataType="_IerNVFLPEfGj_IdrBrDnWg" className="com.company.model.Pedido"/>
@@ -659,7 +659,7 @@
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_yCwJ8VLfEfGX9c_kvNQ8rQ"/>
         <condition xmi:type="expression:Expression" xmi:id="_yCwJ8lLfEfGX9c_kvNQ8rQ" name="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
-      <connections xmi:type="process:SequenceFlow" xmi:id="_2X3JAFLfEfGX9c_kvNQ8rQ" name="sim" target="_oU_rMFLfEfGX9c_kvNQ8rQ" source="_0xC8MFLfEfGX9c_kvNQ8rQ">
+      <connections xmi:type="process:SequenceFlow" xmi:id="_2X3JAFLfEfGX9c_kvNQ8rQ" name="sim" target="_oU_rMFLfEfGX9c_kvNQ8rQ" source="_0xC8MFLfEfGX9c_kvNQ8rQ" isDefault="true">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_2X3JAVLfEfGX9c_kvNQ8rQ"/>
         <condition xmi:type="expression:Expression" xmi:id="_2X3JAlLfEfGX9c_kvNQ8rQ" name="newScript()" content="pedido.concordancia == true" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
           <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_y-m-gF0BEfG5mNSoWG90cg" name="pedido" dataType="_IerNVFLPEfGj_IdrBrDnWg" className="com.company.model.Pedido"/>
@@ -703,7 +703,7 @@
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_do1KUV3eEfGbr_eB3ZGNzQ"/>
         <condition xmi:type="expression:Expression" xmi:id="_do1KUl3eEfGbr_eB3ZGNzQ" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
-      <connections xmi:type="process:SequenceFlow" xmi:id="_d4oWsGpcEfGTionaj6tseg" name="sim" target="_1FHrcGpcEfGTionaj6tseg" source="_Mgt2gFLgEfGX9c_kvNQ8rQ">
+      <connections xmi:type="process:SequenceFlow" xmi:id="_d4oWsGpcEfGTionaj6tseg" name="sim" target="_1FHrcGpcEfGTionaj6tseg" source="_Mgt2gFLgEfGX9c_kvNQ8rQ" isDefault="true">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_d4o9wGpcEfGTionaj6tseg"/>
         <condition xmi:type="expression:Expression" xmi:id="_d4pk0GpcEfGTionaj6tseg" name="newScript()" content="pedido.novoAcordo == true" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
           <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_4KsqYGpeEfGJqvpl4AuDLQ" name="pedido" dataType="_IerNVFLPEfGj_IdrBrDnWg" className="com.company.model.Pedido"/>
