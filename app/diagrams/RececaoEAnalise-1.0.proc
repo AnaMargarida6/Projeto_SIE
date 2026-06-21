@@ -18,6 +18,15 @@
               <inputTypes>java.lang.Boolean</inputTypes>
             </operator>
           </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_lnf7gGz8EfGmarmz-QJAEQ">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_lnf7gWz8EfGmarmz-QJAEQ" name="laneUserId" content="laneUserId" type="TYPE_VARIABLE" returnType="java.lang.Long">
+              <referencedElements xmi:type="process:Data" xmi:id="_mjY8AGz8EfGmarmz-QJAEQ" name="laneUserId" dataType="_IerNT1LPEfGj_IdrBrDnWg"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_lnf7gmz8EfGmarmz-QJAEQ" name="newScript()" content="taskAssigneeId" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long">
+              <referencedElements xmi:type="expression:Expression" xmi:id="_O_xEMGz9EfGw8_a2zLWg8w" name="taskAssigneeId" content="taskAssigneeId" type="TYPE_ENGINE_CONSTANT" returnType="java.lang.Long"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_lnf7g2z8EfGmarmz-QJAEQ" type="ASSIGNMENT"/>
+          </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_IerNK1LPEfGj_IdrBrDnWg" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_IerNLFLPEfGj_IdrBrDnWg" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_IerNLVLPEfGj_IdrBrDnWg" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
@@ -72,6 +81,15 @@
           <formMapping xmi:type="process:FormMapping" xmi:id="_M-WKCV3eEfGbr_eB3ZGNzQ">
             <targetForm xmi:type="expression:Expression" xmi:id="_97lrUGNVEfGOiLHaCO_A-Q" name="ExecutionForm" content="2b8df912-8e13-450e-a030-1912f25b8acb" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
+          <filters xmi:type="process:ActorFilter" xmi:id="_hGSvQGz-EfGw8_a2zLWg8w" name="ProgramadorInitiator" definitionId="bonita-actorfilter-single-user" definitionVersion="1.0.0">
+            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_hGSvQWz-EfGw8_a2zLWg8w" definitionId="bonita-actorfilter-single-user" version="1.0.0">
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_hGSvQmz-EfGw8_a2zLWg8w" key="userId">
+                <expression xmi:type="expression:Expression" xmi:id="_hGSvQ2z-EfGw8_a2zLWg8w" name="userId()" content="laneUserId" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long" returnTypeFixed="true">
+                  <referencedElements xmi:type="process:Data" xmi:id="_hGSvRGz-EfGw8_a2zLWg8w" name="laneUserId" dataType="_IerNT1LPEfGj_IdrBrDnWg"/>
+                </expression>
+              </parameters>
+            </configuration>
+          </filters>
           <contract xmi:type="process:Contract" xmi:id="_M-WKCF3eEfGbr_eB3ZGNzQ">
             <inputs xmi:type="process:ContractInput" xmi:id="_oOfqgGtdEfGzOtPXn2r7xA" name="pedidoInput" type="COMPLEX" dataReference="pedido" createMode="false">
               <inputs xmi:type="process:ContractInput" xmi:id="_oOfqgWtdEfGzOtPXn2r7xA" name="intervencoes" type="COMPLEX" createMode="false">
@@ -540,6 +558,9 @@
         <defaultValue xmi:type="expression:Expression" xmi:id="_vNsLEVzUEfGpGqtCe6Fmhw" name="initPedido()" content="def pedidoVar = new com.company.model.Pedido()&#xD;&#xA;pedidoVar.descricao = pedidoInput?.descricao&#xD;&#xA;pedidoVar.email = pedidoInput?.email&#xD;&#xA;return pedidoVar" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.Pedido">
           <referencedElements xmi:type="process:ContractInput" xmi:id="_vNsLElzUEfGpGqtCe6Fmhw" name="pedidoInput" type="COMPLEX"/>
         </defaultValue>
+      </data>
+      <data xmi:type="process:Data" xmi:id="_kZJSAGz8EfGmarmz-QJAEQ" name="laneUserId" dataType="_IerNT1LPEfGj_IdrBrDnWg">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_kZJSAWz8EfGmarmz-QJAEQ" content="" returnType="java.lang.Long"/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_IerNNFLPEfGj_IdrBrDnWg">
         <targetForm xmi:type="expression:Expression" xmi:id="_PVQF0GNWEfGOiLHaCO_A-Q" name="PedidoForm" content="8d891659-876b-4d35-9020-9e8445568eb7" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>

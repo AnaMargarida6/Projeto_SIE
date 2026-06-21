@@ -112,6 +112,11 @@
       <artifactId>bonita-connector-email-reader</artifactId>
       <version>1.0.0-beta.1</version>
     </dependency>
+    <dependency>
+      <groupId>org.bonitasoft.actorfilter</groupId>
+      <artifactId>bonita-actorfilter-single-user</artifactId>
+      <version>1.0.0</version>
+    </dependency>
     
   </dependencies>
   <build>
