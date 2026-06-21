@@ -18,6 +18,17 @@
               <inputTypes>java.lang.Boolean</inputTypes>
             </operator>
           </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_L6p-UG0GEfG8rfL92xJDwQ">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_L6p-UW0GEfG8rfL92xJDwQ" name="pedido" content="pedido" type="TYPE_VARIABLE" returnType="com.company.model.Pedido">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_M38F8G0GEfG8rfL92xJDwQ" name="pedido" dataType="_IerNVFLPEfGj_IdrBrDnWg" className="com.company.model.Pedido"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_L6qlYG0GEfG8rfL92xJDwQ" name="newScript()" content="if (pedidoInput.tempoEsforco1d == true) {&#xD;&#xA;&#x9;pedidoInput.tempoEsforco = 1&#xD;&#xA;}" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Integer">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_W_xRkG0GEfG8rfL92xJDwQ" name="pedidoInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_L6qlYW0GEfG8rfL92xJDwQ" type="JAVA_METHOD" expression="setTempoEsforco">
+              <inputTypes>java.lang.Integer</inputTypes>
+            </operator>
+          </operations>
           <operations xmi:type="expression:Operation" xmi:id="_lnf7gGz8EfGmarmz-QJAEQ">
             <leftOperand xmi:type="expression:Expression" xmi:id="_lnf7gWz8EfGmarmz-QJAEQ" name="laneUserId" content="laneUserId" type="TYPE_VARIABLE" returnType="java.lang.Long">
               <referencedElements xmi:type="process:Data" xmi:id="_mjY8AGz8EfGmarmz-QJAEQ" name="laneUserId" dataType="_IerNT1LPEfGj_IdrBrDnWg"/>
